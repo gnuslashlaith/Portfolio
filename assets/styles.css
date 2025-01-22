@@ -37,8 +37,10 @@
 .cardView {
     position: relative;
     border-radius: 50px;
-    left: 620px;
-    bottom: 50px;
+    left: 580px;
+    top: 300px;
+    font-size: 25px;
+    padding: 6px;
 
 
 
