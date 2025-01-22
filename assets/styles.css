@@ -33,3 +33,13 @@
     height: 100%;
     background-color: rgb(243,215,244);
 }
+
+.cardView {
+    position: relative;
+    border-radius: 50px;
+    left: 620px;
+    bottom: 50px;
+
+
+
+}
