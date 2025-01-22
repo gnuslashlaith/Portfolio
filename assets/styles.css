@@ -1,0 +1,31 @@
+.title {
+    position: fixed;
+    color: red;
+    display: inline;
+    left: 300px;
+    font-size: 30px;
+
+}
+
+.topButtons {
+    position: relative;
+    display:inline;
+    float: right;
+    font-size: 20px;
+    background-color: rgb(243,215,244);
+    border-radius: 1px;
+    border-color: transparent;
+
+
+
+}
+.topButtons:hover {
+    background-color: rgb(244,198,242);
+    border-color: rgb(255,255,255)
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(243,215,244);
+}
