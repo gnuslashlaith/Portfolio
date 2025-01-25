@@ -27,9 +27,9 @@
 .navbar ul li {
     list-style: none;
     display: inline-block;
-    left: 1400px;
     margin: 0 20px;
-    position: relative;
+    position: fixed;
+    
     font-family: sans-serif;
 
 }
