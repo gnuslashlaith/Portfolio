@@ -1,156 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+    background-color:rgb(35, 72, 106);
 }
 
-.banner{
-    width:100%;
-    height: 100vh;
-    background-image: url(Firefox_wallpaper.png); 
-    background-size: cover;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
-
-.navbar{
-    width:85%;
-    margin:auto;
-    padding: 35px 0;
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    font-family: sans-serif;
-}
-
-.navbar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: fixed;
-    
-    font-family: sans-serif;
-
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: sans-serif;
-
-}
-
-.navbar ul li::after{
-    content:'';
-    height:3px;
-    width: 0%;
-    background:#009688;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transition: 0.5s;
-    font-family: sans-serif;
-}
-
-.navbar ul li:hover::after{
-    width:100%;
-
-}
-
-.content{
-    font-family: monospace;
-    width:100%;
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
+.title {
     text-align: center;
-    color: #fff;
-    font-size:25px;
+    font-family:system-ui;
+    color: rgb(239, 176, 54); 
 }
 
-.content h1{
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 50px;
-    font-family: monospace;
-
-}
-
-.content p{
-    font-family: monospace;
-    font-size:20px;
-
-}
-
-button{
-    width:200px;
-    padding: 15px 0;
+.sub {
     text-align: center;
-    border-radius: 25px;
-    font-weight: bold;
-    border:2px solid #009688;
-    background: transparent;
-    color:white;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    font-family: monospace;
-    top: 45px;
+    font-family:system-ui;
+    color: rgb(239, 176, 54); 
 }
 
-span{
-    background:#009688;
-    height:100%;
-    width:0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition:0.5s;
-    font-family:monospace;
-
-}
-
-button:hover span{
-    width:100%;
-}
-
-button:hover{
-    border:none;
-}
 
 .projects {
-    width:85%;
-    height:100px;
-    margin:auto;
-    padding: 35px 0;
-    align-items:center;
-    display: inline-block;
-    left: 100px;
-    bottom: 200px;
     position: relative;
-    color:white;
-    
-}
-
-
-.buttonProject {
-    width:200px;
-    padding: 15px 0;
     text-align: center;
-    border-radius: 25px;
-    font-weight: bold;
-    border:2px solid #9a92f8;
-    background: transparent;
-    color:white;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    font-family: monospace;
-    top: 45px;
+    font-family: system-ui;
+    top: 20px;
+    color: rgb(239, 176, 54); 
 }
 
 
+.projButtons {
+    /* start position */
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    top: 60px;
+
+    /* styling */
+    font-family: system-ui;
+    border-radius: 10px;
+    padding: 6px;
+    color: rgb(239, 176, 54); 
+    background-color: transparent;
+    border-color: rgb(44, 79, 111);
+
+    cursor: pointer;
+    overflow: hidden;
+
+
+}
+
+
+.projButtons:hover{
+    background-color: rgb(76, 123, 139);
+    box-shadow: 0 5px 16px 0 rgb(59, 103, 144);
+    transition-duration: 0.5s;
+}
