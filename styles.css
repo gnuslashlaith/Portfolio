@@ -5,13 +5,13 @@
 .title {
     text-align: center;
     font-family:system-ui;
-    color: rgb(239, 176, 54); 
+    color: rgb(239, 176, 54);
 }
 
 .sub {
     text-align: center;
     font-family:system-ui;
-    color: rgb(239, 176, 54); 
+    color: rgb(239, 176, 54);
 }
 
 
@@ -20,7 +20,7 @@
     text-align: center;
     font-family: system-ui;
     top: 20px;
-    color: rgb(239, 176, 54); 
+    color: rgb(239, 176, 54);
 }
 
 
@@ -28,21 +28,56 @@
 
 /* Float four columns side by side */
 .projectCards {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  float: center;
+  width: 50%;
 }
 
 
 
 /* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgb(19, 46, 70); /* this adds the "card" effect */
+  border-radius: 50px;
   padding: 16px;
-  text-align: center;
+  text-align: left;
   background-color: #f1f1f1;
 }
 
+.card:hover {
+  background-color:rgb(55, 104, 150);
+  box-shadow: 0 4px 8px 0 rgb(40, 83, 120); /* this adds the "card" effect */
+  transition-duration: 0.5s
+}
+
+.projectTitle {
+  background-color: transparent;
+  color:rgb(239, 176, 54);
+  text-decoration: none;
+  font-family: system-ui;
+}
+
+.blogView {
+  box-shadow: 0 4px 8px 0 rgb(19, 46, 70); /* this adds the "card" effect */
+  border-radius: 50px;
+  padding: 16px;
+  text-align: left;
+  background-color: #f1f1f1; 
+}
+
+.blogTitleView {
+  background-color: transparent;
+  color:rgb(239, 176, 54);
+  text-decoration: none;
+  font-family: system-ui;
+}
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
   .column {
@@ -51,3 +86,4 @@
     margin-bottom: 20px;
   }
 }
+
