@@ -24,30 +24,30 @@
 }
 
 
-.projButtons {
-    /* start position */
-    position: relative;
-    display: block;
-    margin: 20px auto;
-    top: 60px;
-
-    /* styling */
-    font-family: system-ui;
-    border-radius: 10px;
-    padding: 6px;
-    color: rgb(239, 176, 54); 
-    background-color: transparent;
-    border-color: rgb(44, 79, 111);
-
-    cursor: pointer;
-    overflow: hidden;
 
 
+/* Float four columns side by side */
+.projectCards {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
 }
 
 
-.projButtons:hover{
-    background-color: rgb(76, 123, 139);
-    box-shadow: 0 5px 16px 0 rgb(59, 103, 144);
-    transition-duration: 0.5s;
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
