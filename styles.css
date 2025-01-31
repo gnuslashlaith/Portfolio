@@ -1,17 +1,17 @@
 * {
-    background-color:rgb(35, 72, 106);
+    background-color: rgb(60, 61, 55);
 }
 
 .title {
     text-align: center;
     font-family:system-ui;
-    color: rgb(239, 176, 54);
+    color: rgb(236, 223, 204);
 }
 
 .sub {
     text-align: center;
     font-family:system-ui;
-    color: rgb(239, 176, 54);
+    color: rgb(236, 223, 204);
 }
 
 
@@ -20,7 +20,7 @@
     text-align: center;
     font-family: system-ui;
     top: 20px;
-    color: rgb(239, 176, 54);
+    color: rgb(236, 223, 204);
 }
 
 
@@ -44,40 +44,37 @@
 
 /* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgb(19, 46, 70); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgb(30, 32, 30); /* this adds the "card" effect */
   border-radius: 50px;
   padding: 16px;
   text-align: left;
-  background-color: #f1f1f1;
+  background-color:rgb(236, 223, 204);
 }
 
 .card:hover {
-  background-color:rgb(55, 104, 150);
-  box-shadow: 0 4px 8px 0 rgb(40, 83, 120); /* this adds the "card" effect */
-  transition-duration: 0.5s
+  background-color:rgb(105, 117, 101);
+  box-shadow: 0 4px 8px 0 rgb(30, 32, 30); /* this adds the "card" effect */
+  transition-duration: 0.5s;
+  .image {background-color: rgb(105, 117, 101); transition-duration: 0.5s;} 
 }
 
+
+
+.fractaltree {
+  position: relative;
+  top: -20px;
+  background-color: transparent;
+  color: rgb(30, 32, 30);
+  text-decoration: none;
+  font-family: system-ui; 
+}
 .projectTitle {
   background-color: transparent;
-  color:rgb(239, 176, 54);
+  color: rgb(30, 32, 30);
   text-decoration: none;
   font-family: system-ui;
 }
 
-.blogView {
-  box-shadow: 0 4px 8px 0 rgb(19, 46, 70); /* this adds the "card" effect */
-  border-radius: 50px;
-  padding: 16px;
-  text-align: left;
-  background-color: #f1f1f1; 
-}
-
-.blogTitleView {
-  background-color: transparent;
-  color:rgb(239, 176, 54);
-  text-decoration: none;
-  font-family: system-ui;
-}
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
   .column {
@@ -87,3 +84,6 @@
   }
 }
 
+.image {
+  background-color: rgb(236, 223, 204) 
+}
