@@ -47,7 +47,7 @@
   box-shadow: 0 4px 8px 0 rgb(30, 32, 30); /* this adds the "card" effect */
   border-radius: 50px;
   padding: 16px;
-  text-align: left;
+  text-align: center;
   background-color:rgb(236, 223, 204);
 }
 
@@ -85,5 +85,7 @@
 }
 
 .image {
-  background-color: rgb(236, 223, 204) 
+  background-color: rgb(236, 223, 204);
+  width: 100;
+  height: 100;
 }
