@@ -15,7 +15,7 @@
 }
 
 
-.projects {
+.heading {
     position: relative;
     text-align: center;
     font-family: system-ui;
@@ -83,15 +83,23 @@
 }
 
 .nav {
-  display: inline;
+  display: block;
   list-style-type: none;
   border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .nav li {
+  position: relative;
   border-radius: 10px;
   display: inline;
   padding: 10px;
+  text-align: center;
+  float: center; 
+  left: -20px;
+
 }
 .nav li a {
   border-radius: 10px;
@@ -99,7 +107,10 @@
   text-decoration: none;
   font-family: system-ui;
   padding: 10px;
-  float: right;
+  text-align: center;
+  float: center;
+  justify-content: center;
+
 }
 
 .nav li a:hover {
@@ -108,3 +119,51 @@
   transition-duration: 0.5s;
 }
 
+/* blog page */
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px 10px;
+  gap: 4px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.blogCards {
+  box-shadow: 0 4px 8px 0 rgb(30, 32, 30); /* this adds the "card" effect */
+  border-radius: 50px;
+  padding: 16px;
+  text-align: center;
+  background-color:rgb(236, 223, 204);
+  gap: 4px;
+}
+
+.blogCards a {
+  background-color: transparent;
+  color: rgb(30, 32, 30);
+  text-decoration: none;
+  font-family: system-ui;
+  padding: 10px;
+}
+
+.blogCards:hover {
+  background-color:rgb(105, 117, 101);
+  box-shadow: 0 4px 8px 0 rgb(30, 32, 30); /* this adds the "card" effect */
+  transition-duration: 0.5s;
+}
+
+p {
+  text-align: center;
+  font-family:system-ui;
+  color: rgb(236, 223, 204);
+}
