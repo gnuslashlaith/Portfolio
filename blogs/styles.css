@@ -32,8 +32,30 @@ p {
   float: center;
   font-family:system-ui;
   color: rgb(236, 223, 204);
-  margin-left: 400px;
-  margin-right: 400px;
+}
+
+.side {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    flex-grow: 1;  /* Flexible margin */
+    min-width: 50px; /* Ensures a minimum margin */
+    justify-content: center;
+  }
+.content {
+    flex-grow: 3;  /* Gives content priority */
+    max-width: 700px; /* Prevents content from becoming too wide */
+    min-width: 300px;
+    align-items: center;
+    float: center;
+    justify-content: center;
+}
+
+@media (max-width: 684px) {
+    .content {
+        margin-top: 0;
+    }
 }
 
 .info {
