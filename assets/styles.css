@@ -65,7 +65,9 @@
   color: rgb(30, 32, 30);
   text-decoration: none;
   font-family: system-ui;
-  padding: 10px;
+  padding: 16px;
+  text-align: center;
+  float: center;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -79,7 +81,7 @@
 
 .image {
   background-color: rgb(236, 223, 204);
-  width: 50%;
+  width: 100px;
 }
 
 .nav {
@@ -124,12 +126,15 @@
 .column {
   float: left;
   width: 25%;
-  padding: 10px 10px;
+  padding: 20px 60px;
   gap: 4px;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
+.row {
+  margin: 0px -5px;
+
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -166,4 +171,11 @@ p {
   text-align: center;
   font-family:system-ui;
   color: rgb(236, 223, 204);
+}
+
+
+.image2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
 }

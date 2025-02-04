@@ -10,8 +10,11 @@
 
 .sub {
     text-align: center;
+    display: flex;
     font-family:system-ui;
     color: rgb(236, 223, 204);
+    align-items: center;
+    padding-left: 5px;
 }
 
 
@@ -31,4 +34,30 @@ p {
   color: rgb(236, 223, 204);
   margin-left: 400px;
   margin-right: 400px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.back {
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    color:rgb(236, 223, 204);
+    text-decoration: none;
+    font-family: system-ui;
+    padding: 10px;
+    text-align: center;
+    float: center;
+    justify-content: center;
+}
+
+.back:hover {
+    background-color: rgb(236, 223, 204);
+    color: rgb(105, 117, 101); 
+    transition-duration: 0.5s;
 }
