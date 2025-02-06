@@ -1,0 +1,100 @@
+* {
+    background-color: rgba(0,0,0,255);
+}
+
+
+.title {
+    text-align: center;
+    color: #00d900;
+    font-family: monospace;
+}
+
+.sub {
+    text-align: center;
+    color: #00d900;
+    font-family: monospace;
+}
+
+.nav {
+    display: block;
+    list-style-type: none;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .nav li {
+    position: relative;
+    border-radius: 10px;
+    display: inline;
+    padding: 10px;
+    text-align: center;
+    float: center; 
+    left: -20px;
+  
+  }
+  .nav li a {
+    border-radius: 10px;
+    color:#00d900;
+    text-decoration: none;
+    font-family: monospace;
+    padding: 10px;
+    text-align: center;
+    float: center;
+    justify-content: center;
+  
+  }
+  
+  .nav li a:hover {
+    background-color: #00d900;
+    color: rgb(31, 30, 29); 
+    transition-duration: 0.5s;
+  }
+
+  
+
+  .left {
+    display: flex;
+    margin: auto;
+    max-width: 900px;
+    min-width: 100px;
+    justify-content: left;
+  }
+
+  .blogCard {
+    width: 200px;
+    height: 400px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
+  h3 {
+    color: #00d900;
+    font-family: monospace;
+  }
+  p {
+    color: #00d900;
+    font-family: monospace;
+  }
+
+
+  .entries {
+    position: relative;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    top: 40px;
+    border: white;
+  }
+
+  .EntryCard {
+    padding: 5px;
+    gap: 5px;
+    border: white;
+  }
+
+
+  
