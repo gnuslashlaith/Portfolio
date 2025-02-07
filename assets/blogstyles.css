@@ -67,15 +67,23 @@
     height: 400px;
     padding: 10px;
     border: 5px solid gray;
-    margin: 0;
+    margin-top: -95px;
 }
-  h3 {
+  .entrysub {
+    display: flex;
     color: #00d900;
+    font-size: 20px;
+    text-decoration: none;
     font-family: monospace;
+    justify-content: center;
+    text-align: left;
   }
   p {
+    display: flex;
     color: #00d900;
     font-family: monospace;
+    justify-content: center;
+    
   }
 
 
@@ -98,3 +106,8 @@
 
 
   
+h3 {
+    color: #00d900;
+    font-family: monospace;
+    text-align: center;
+}
