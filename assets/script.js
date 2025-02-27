@@ -15,6 +15,7 @@ seekbar.addEventListener("input", () => {
     audio.currentTime = seekbar.value;
 });
 
+// Play audio when interacting with seekbar (optional)
 seekbar.addEventListener("mousedown", () => {
     if (audio.paused) {
         audio.play();

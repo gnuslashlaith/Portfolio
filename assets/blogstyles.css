@@ -166,6 +166,6 @@ button:hover {
 #currentTime, #duration {
   color: white;
   font-family: monospace;
+  font-size: 14px;
   margin-top: 5px;
-  font-size: 10px;
 }
