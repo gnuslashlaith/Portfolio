@@ -1,18 +1,18 @@
 * {
-    background-color: rgb(60, 61, 55);
+    background-color: rgb(46,46,46);
 }
 
 .title {
     text-align: center;
-    font-family:system-ui;
-    color: rgb(236, 223, 204);
+    font-family:monospace;
+    color: rgb(218,218,218);
 }
 
 .sub {
     text-align: center;
     display: flex;
-    font-family:system-ui;
-    color: rgb(236, 223, 204);
+    font-family:monospace;
+    color: rgb(218,218,218);
     align-items: center;
     padding-left: 5px;
 }
@@ -21,17 +21,17 @@
 .heading {
     position: relative;
     text-align: center;
-    font-family: system-ui;
+    font-family: monospace;
     top: 20px;
-    color: rgb(236, 223, 204);
+    color: rgb(218,218,218);
 }
 
 
 
 p {
   float: center;
-  font-family:system-ui;
-  color: rgb(236, 223, 204);
+  font-family:monospace;
+  color: rgb(218,218,218);
 }
 
 .side {
@@ -69,9 +69,9 @@ p {
     position: relative;
     top: 10px;
     border-radius: 10px;
-    color:rgb(236, 223, 204);
+    color:rgb(218,218,218);
     text-decoration: none;
-    font-family: system-ui;
+    font-family: monospace;
     padding: 10px;
     text-align: center;
     float: center;
@@ -79,7 +79,7 @@ p {
 }
 
 .back:hover {
-    background-color: rgb(236, 223, 204);
-    color: rgb(105, 117, 101); 
+    background-color: rgb(218,218,218);
+    color: rgb(46,46,46); 
     transition-duration: 0.5s;
 }
