@@ -114,7 +114,7 @@ audio {
   display: none; /* Hides the default audio controls */
 }
 
-#seekbar {
+.seekbar {
   width: 100%;
   height: 2%;
   cursor: pointer;
@@ -129,7 +129,7 @@ audio {
 }
 
 /* The draggable thumb */
-#seekbar::-webkit-slider-thumb {
+.seekbar::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 5px;
@@ -140,7 +140,7 @@ audio {
   transition: 0.2s ease-in-out;
 }
 
-#seekbar::-webkit-slider-thumb:hover {
+.seekbar::-webkit-slider-thumb:hover {
   width: 15px;
   height: 15px;
   background: #ff3b3b; /* Change color on hover */
@@ -163,7 +163,7 @@ button:hover {
   background-color: rgb(34, 34, 34);
 }
 
-#currentTime, #duration {
+.currentTime, .duration {
   color: white;
   font-family: monospace;
   font-size: 14px;
