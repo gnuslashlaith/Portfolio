@@ -6,9 +6,11 @@
 
 #nav {
   max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
+  box-sizing:content-box;
   text-align: center;
+  background-color: rgb(39, 36, 36);
+  overflow:hidden;
 }
 
 .nav li {
@@ -19,6 +21,7 @@
   text-align: center;
   float: center; 
   left: -20px;
+  background-color: rgb(39, 36, 36);
 
 }
 .nav li a {
@@ -30,6 +33,7 @@
   text-align: center;
   float: center;
   justify-content: center;
+  background-color: rgb(39, 36, 36);
 
 }
 
@@ -168,4 +172,14 @@ button:hover {
   font-family: monospace;
   font-size: 14px;
   margin-top: 5px;
+}
+
+.title {
+  max-width: fit-content;
+  margin-inline: auto;
+
+  font-family: monospace;
+  color: rgb(218,218,218);
+
+
 }
