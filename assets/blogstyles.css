@@ -3,22 +3,32 @@
 }
 
 
+.banner {
+  max-width: 100%;
+ background-color: rgb(39, 36, 36); 
+ overflow: hidden;
+ border: 20px rgb(39, 36, 36);
+}
 
 #nav {
-  max-width: 100%;
   margin-inline: auto;
   box-sizing:content-box;
   text-align: center;
-  background-color: rgb(39, 36, 36);
-  overflow:hidden;
 }
 
+.nav {
+  background-color: rgb(39,36,36);
+  border: 20px rgb(39, 36, 36);
+}
+
+.title {
+  background-color: rgb(39,36,36);
+}
 .nav li {
   position: relative;
   border-radius: 10px;
   display: inline;
-  text-align: center;
-  float: center; 
+  text-align: right;
   left: -20px;
   background-color: rgb(39, 36, 36);
 
@@ -29,8 +39,7 @@
   text-decoration: none;
   font-family: monospace;
   padding: 10px;
-  text-align: center;
-  float: center;
+  text-align: right;
   justify-content: center;
   background-color: rgb(39, 36, 36);
 
