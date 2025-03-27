@@ -1,16 +1,16 @@
 * {
-    background-color: rgb(60, 61, 55);
+    background-color: rgb(46,46,46);
 }
 
 .title {
     text-align: center;
-    font-family:system-ui;
-    color: rgb(236, 223, 204);
+    font-family:monospace;
+    color: rgb(218,218,218);
 }
 
 .sub {
     text-align: center;
-    font-family:system-ui;
+    font-family:monospace;
     color: rgb(236, 223, 204);
 }
 
@@ -18,9 +18,9 @@
 .heading {
     position: relative;
     text-align: center;
-    font-family: system-ui;
+    font-family: monospace;
     top: 20px;
-    color: rgb(236, 223, 204);
+    color: rgb(218,218,218);
 }
 
 
@@ -46,19 +46,21 @@
 
 /* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgb(30, 32, 30); /* this adds the "card" effect */
-  border-radius: 50px;
-  padding: 30px;
-  text-align: center;
-  background-color:rgb(236, 223, 204);
-  gap: 10px;
+  width: 600px;
+  height: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 10px;
+  border: 1px solid rgb(236, 235, 235);
+  border-radius: 2px;
+  transition: 0.3s;
+  text-align: left;
+
 }
 
 .card:hover {
-  background-color:rgb(105, 117, 101);
-  box-shadow: 0 4px 8px 0 rgb(30, 32, 30); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgb(98, 100, 98); /* this adds the "card" effect */
+  
   transition-duration: 0.5s;
-  .image {background-color: rgb(105, 117, 101); transition-duration: 0.5s;} 
 }
 
 
@@ -66,11 +68,11 @@
 .projectTitle {
   display: flex;
   background-color: transparent;
-  color: rgb(30, 32, 30);
+  color: rgb(218,218,218);
   text-decoration: none;
-  font-family: system-ui;
+  font-family: monospace;
   padding: 16px;
-  text-align: center;
+  text-align: left;
   float: center;
   justify-content: center;
 }
