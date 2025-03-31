@@ -11,17 +11,20 @@
 .sub {
     text-align: center;
     font-family:monospace;
-    color: rgb(236, 223, 204);
+    color: rgb(218,218,218);
 }
 
 
 .heading {
     position: relative;
-    text-align: center;
     font-family: monospace;
     top: 20px;
     color: rgb(218,218,218);
-}
+    display: inline-block;
+    text-align: left;
+
+
+  }
 
 
 
@@ -36,10 +39,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 40px;
-  float: center;
   width: 50%;
+  text-align: left;
 }
 
 
@@ -69,12 +71,24 @@
   display: flex;
   background-color: transparent;
   color: rgb(218,218,218);
-  text-decoration: none;
+  text-decoration: underline;
   font-family: monospace;
-  padding: 16px;
+  padding: 10px;
   text-align: left;
-  float: center;
-  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.projectTitle:hover {
+  text-decoration: none;
+}
+
+.desc {
+  display: flex;
+  color: rgb(218,218,218);
+  font-family: monospace;
+  padding: 10px;
+  text-align: left;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -108,9 +122,9 @@
 }
 .nav li a {
   border-radius: 10px;
-  color:rgb(236, 223, 204);
+  color:rgb(218,218,218);
   text-decoration: none;
-  font-family: system-ui;
+  font-family: monospace;
   padding: 10px;
   text-align: center;
   float: center;
@@ -119,8 +133,8 @@
 }
 
 .nav li a:hover {
-  background-color: rgb(236, 223, 204);
-  color: rgb(105, 117, 101); 
+  background-color: rgb(218,218,218);
+  color: rgb(37, 36, 36); 
   transition-duration: 0.5s;
 }
 
@@ -171,7 +185,7 @@
 }
 
 p {
-  text-align: center;
+  text-align: left;
   font-family:system-ui;
   color: rgb(236, 223, 204);
 }
