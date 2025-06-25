@@ -9,6 +9,16 @@
     </head>
 
     <body>
+        <img src="../Portfolio/assets/images/moon-not-angry.png" class="moon">
+        <script>
+            const img = document.querySelector('.moon');
+            img.addEventListener('mouseover', () => {
+                img.src = '../Portfolio/assets/images/moon.png'
+            });
+            img.addEventListener('mouseout', () => {
+                img.src = '../Portfolio/assets/images/moon-not-angry.png'
+            });
+        </script>
         <div class="intro">
 
             <h1 class="title vt323-regular">GNU / Laith</h1>
@@ -23,6 +33,7 @@
             <a class="tabs vt323-regular" href="contact.html">Contacts</a>
             <a class="tabs vt323-regular" href="assets/yasmeenresume.pdf">Resume</a>
         </div>
+
 
 
         <div class="container">
@@ -59,6 +70,42 @@
 
                     <div class="socials">
                         <a href="https://github.com/gnuslashlaith"><img src="../Portfolio/assets/images/github.png" class="icons"></a>
+                        <a href="https://discord.com/users/justbekuv_tubi"><img src="../Portfolio/assets/images/discord.png" class="icons"></a>
+                        <a href="https://open.spotify.com/user/7i4659fltzx0s3gmbv7osacx6?si=203cf1f725a44dbf"><img src="../Portfolio/assets/images/spotify.png" class="icons"></a>
+                        <a href="https://app.thestorygraph.com/profile/tubi_laith"><img src="../Portfolio/assets/images/story-graph.png" class="icons"></a>
+                    </div>
+
+                    <div class="read-container">
+                        <img src="../Portfolio/assets/images/the-way-of-kings.jpg" class="covers">
+                        <h2 class="vt323-regular">Current Read</h2>
+
+                    </div>
+                    <h1 class="vt323-regular project-head">Projects</h1>
+
+                    <div class="project-container">
+                        <div class="project-card">
+                            <a class="title-link vt323-regular" href="https://github.com/gnuslashlaith/projectmanager">Project Manager</a>
+                            <p class="vt323-regular"> Help keep track of project goals. Made with React JS.</p>
+                        </div>
+                        <br>
+                        <div class="project-card">
+                            <a class="title-link vt323-regular" href="https://github.com/gnuslashlaith/Portfolio">This website!</a>
+                            <p class="vt323-regular">Pretty awesome, isn't it?</p>
+                        </div>
+                        <br>
+                        <div class="project-card">
+                            <a class="title-link vt323-regular" href="https://github.com/gnuslashlaith/Mp3PlayerCode">Mp3 Player</a>
+                            <p class="vt323-regular"> 128 GB of storage, powered by RP2040.</p>
+                        </div>
+                        <br>
+                        <div class="project-card">
+                            <a class="title-link vt323-regular" href="https://github.com/TeamFractalTree/FractalTree">Fractal Tree</a>
+                            <p class="vt323-regular">Created for LifeLines Hackathon '25.</p>
+                        </div>
+                        
+
+
+
                     </div>
 
                 
