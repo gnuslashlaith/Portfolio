@@ -95,6 +95,19 @@ p {
 
 }
 
+.main-blog-text {
+  position: relative;
+  width: 70vh;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid blue;
+  padding: 5px;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  padding-bottom: 30px;
+}
+
 
 
 .profile-container {
@@ -192,7 +205,7 @@ p {
   text-decoration: none;
   color: orange;
   font-weight: bold;font-size: 18px;
-  transition: all ease 3s;
+  transition: all ease 2s;
 
 }
 
@@ -202,4 +215,131 @@ p {
 .title-link:hover {
   color: blue;
   text-decoration: underline;
+}
+
+.blog-cards-container {
+  margin-left: 2vh;
+
+}
+.blog-cards {
+  width: 90%;
+  border: 4px solid #000;
+  padding: 2px;
+  box-shadow: 5px 5px 0 #000, 10px 10px 0 blue;
+  text-wrap: wrap;
+  transition: all ease 2s;
+}
+
+.blog-cards:hover {
+  box-shadow: 5px 5px 0 #000, 10px 10px 0 orange;
+}
+
+.header-con {
+  margin-left: 2vh;
+}
+
+.blog-text {
+  font-size: 20px;
+}
+.content {
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+@media screen and (max-width: 599px) {
+  .main {
+    float: center;
+    width: 120vw;
+    margin-left: 5vh;
+    height: 100%;
+  }
+  .navigation {
+    display: flex;
+    margin-left: 5vh;
+    width: 71vh;
+  }
+  .profile-container {
+    height: 222px;
+    width: 150px;
+  }
+  .pfp {
+    height: 110px;
+  }
+  .about-container {
+    margin-left: 25vh;
+    margin-top: 30vh;
+  }
+
+}
+
+
+/* Song pages */
+
+
+
+.songs {
+
+}
+
+/* customize look of song player */
+audio {
+  display: none; /* Hides the default audio controls */
+}
+
+.seekbar {
+  width: 100%;
+  height: 2%;
+  cursor: pointer;
+  -webkit-appearance: none; 
+  weight: 8px; /* Thickness */
+  background: #ddd; /* Track color */
+  border-radius: 1px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* The draggable thumb */
+.seekbar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 5px;
+  height: 5px;
+  background: #ababab; /* Thumb color */
+  border-radius: 1px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.seekbar::-webkit-slider-thumb:hover {
+  width: 15px;
+  height: 15px;
+  background: #ff3b3b; /* Change color on hover */
+}
+
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+button {
+  color: white;
+  border-color: transparent;
+
+}
+
+button:hover {
+  background-color: rgb(34, 34, 34);
+}
+
+.currentTime, .duration {
+  font-size: 14px;
+}
+
+.title {
+  font-size: 12px;
+
+
+
 }
