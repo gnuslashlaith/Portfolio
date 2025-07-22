@@ -27,6 +27,16 @@ body {
   cursor: pointer;
 }
 
+.disc {
+  height: 200px;
+  width: auto;
+  float: left;
+}
+
+.disc:hover {
+  cursor: pointer;
+}
+
 .navigation {
   width: 71vh;
   margin-left: auto;

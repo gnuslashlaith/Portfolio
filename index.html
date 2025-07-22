@@ -116,5 +116,21 @@
 
             </div>
         </div>
+        <img src="assets/images/music-disc.png" id="hover-img" class="disc">        
+        <audio id="hover-audio" src="Music/disc-song.mp3" hidden></audio>
+        <script>
+            const imgDisc = document.getElementById('hover-img');
+            const audio = document.getElementById('hover-audio');
+
+            imgDisc.addEventListener('click', () => {
+                if(audio.paused) {
+                    audio.play();
+                    imgDisc.classList.add('spinning');
+                } else {
+                    audio.pause();
+                    imgDisc.classList.remove('spinning');
+                }
+            });
+        </script>
     </body>
 </html>
