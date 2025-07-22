@@ -10,6 +10,23 @@
     </head>
 
     <body>
+
+        <img src="../assets/images/music-disc.png" id="hover-img" class="moon">
+        <audio id="hover-audio" src="disc-song.mp3" hidden></audio>
+        <script>
+            const imgDisc = document.getElementById('hover-img');
+            const audio = document.getElementById('hover-audio');
+
+            imgDisc.addEventListener('click', () => {
+                if(audio.paused) {
+                    audio.play();
+                    imgDisc.classList.add('spinning');
+                } else {
+                    audio.pause();
+                    imgDisc.classList.remove('spinning');
+                }
+            });
+        </script>
         <div class="intro">
 
             <h1 class="title vt323-regular">GNU / Laith</h1>
@@ -18,11 +35,11 @@
         </div>
 
         <div class="navigation">
-            <a class="tabs vt323-regular" href="index.html">Home</a>
-            <a class="tabs vt323-regular" href="blogs.html">Blogs</a>
+            <a class="tabs vt323-regular" href="../index.html">Home</a>
+            <a class="tabs vt323-regular" href="../blogs.html">Blogs</a>
             <a class="tabs vt323-regular" href="music.html">Music</a>
-            <a class="tabs vt323-regular" href="contact.html">Contacts</a>
-            <a class="tabs vt323-regular" href="/assets/yasmeenresume.pdf">Resume</a>
+            <a class="tabs vt323-regular" href="../contact.html">Contacts</a>
+            <a class="tabs vt323-regular" href="../assets/yasmeenresume.pdf">Resume</a>
         </div>
 
 
@@ -42,7 +59,7 @@
                 <div class="songEntries">
                         
                     <div>
-                        <div class="songsO">
+                        <div class="songs songsO">
                             <audio class="audio" src="aretheflowerssmellingnice_--WIP_-_06_05_2024_9.04_PM.mp3"></audio>
                             <h3 class="bodyHeaders vt323-regular">the tea got cold again</h3>
                             <div class="controls">
@@ -58,7 +75,7 @@
                         
                     </div>
                     <div>
-                        <div class="songsT">
+                        <div class="songs songsT">
                             <audio class="audio" src="peanutButterSandwich.mp3"></audio>
                             <h3 class="bodyHeaders vt323-regular">apples and peanut butter</h3>
                             <div class="controls">
@@ -72,7 +89,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="songsO">
+                        <div class="songs songsO">
                             <audio class="audio" src="cowabummer.mp3"></audio>
                             <h3 class="bodyHeaders vt323-regular">COWABUMMER!</h3>
                             <div class="controls">
@@ -86,7 +103,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="songsT">
+                        <div class="songs songsT">
                             <audio class="audio" src="feel.mp3"></audio>
                             <h3 class="bodyHeaders vt323-regular">Feel</h3>
                             <div class="controls">
@@ -100,7 +117,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="songsO">
+                        <div class="songs songsO">
                             <audio class="audio" src="R29d1.mp3"></audio>
                             <h3 class="bodyHeaders vt323-regular">R29D1.mp3</h3>
                             <div class="controls">
@@ -114,7 +131,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="songsT">
+                        <div class=" songs songsT">
                             <audio class="audio" src="staycation.mp3"></audio>
                             <h3 class="bodyHeaders vt323-regular">Staycation</h3>
                             <div class="controls">
@@ -128,7 +145,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="songsO">
+                        <div class="songs songsO">
                             <audio class="audio" src="ido.mp3"></audio>
                             <h3 class="bodyHeaders vt323-regular">I Do</h3>
                             <div class="controls">
@@ -142,7 +159,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="songsT">
+                        <div class="songs songsT">
                             <audio class="audio" src="nectar.mp3"></audio>
                             <h3 class="bodyHeaders vt323-regular">Nectar</h3>
                             <div class="controls">
@@ -157,6 +174,53 @@
                         </div>
                     </div>
                 </div>
+
+                <h2 class="vt323-regular about-header" style="margin-top: 4vh; margin-left:2vh;">stars may not dream as far as you</h2>
+
+                <div class="songEntriesAlbum2">
+                    <div class="songs songsO">
+                        <audio class="audio" src="Ellie bday song.mp3"></audio>
+                        <h3 class="bodyHeaders vt323-regular">A Tribute</h3>
+                        <div class="controls">
+                            <button class="play">▶</button>
+                                <button class="pause">◼</button>
+                                <input type="range" class="seekbar" value="0" min="0" step="0.1">
+                                <button class="vol-up">+</button>
+                                <button class="vol-down">-</button>
+                                <br>
+                                <span class="currentTime vt323-regular">0:00</span> / <span class="duration vt323-regular">--:--</span>
+                        </div>
+                    </div>
+                    <div class="songs songsT">
+                        <audio class="audio" src="i_do_2.mp3"></audio>
+                        <h3 class="bodyHeaders vt323-regular">I_do_2.mp3</h3>
+                        <div class="controls">
+                            <button class="play">▶</button>
+                                <button class="pause">◼</button>
+                                <input type="range" class="seekbar" value="0" min="0" step="0.1">
+                                <button class="vol-up">+</button>
+                                <button class="vol-down">-</button>
+                                <br>
+                                <span class="currentTime vt323-regular">0:00</span> / <span class="duration vt323-regular">--:--</span>
+                        </div>
+
+                    </div>
+                    <div class="songs songsO">
+                        <audio class="audio" src="fawm_1.mp3"></audio>
+                        <h3 class="bodyHeaders vt323-regular">Linger</h3>
+                        <div class="controls">
+                            <button class="play">▶</button>
+                            <button class="pause">◼</button>
+                            <input type="range" class="seekbar" value="0" min="0" step="0.1">
+                            <button class="vol-up">+</button>
+                            <button class="vol-down">-</button>
+                            <br>
+                            <span class="currentTime vt323-regular">0:00</span> / <span class="duration vt323-regular">--:--</span>
+                        </div>
+                    </div>
+                </div>
+
+
 
             </div>
         </div>
