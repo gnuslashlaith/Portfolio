@@ -123,31 +123,29 @@ p {
 }
 
 
-
 .profile-container {
   margin-top: 5vh;
   margin-left: 2vh;
   border: 4px solid #000;
-  max-width: fit-content;
+  max-width: 25vh;
   padding: 5px;
   padding-bottom: 40px;
   padding-top: 40px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: 5px 5px 0 #000, 10px 10px 0 blue;
   text-wrap: wrap;
-
-
+  max-height: fit-content;
 }
 .pfp {
-  position: relative;
-  transform: translateX(10%);
-  height: 200px;
+  display: block;
+  margin: auto;
+  height: 175px;
   border-radius: 100px;
 }
 
 .about-container {
   margin-left: 35vh;
-  transform: translateY(-95%)
+  transform: translateY(-50vh);
 }
 
 .about-header {
@@ -158,7 +156,6 @@ p {
 
 .about-text {
   font-size: 18px;
-  transform: translateY(-4%);
 }
 
 .social-title {
@@ -246,7 +243,7 @@ p {
 .top-half {
   display: flex;
   flex-direction: row;
-  gap: 15%;
+  gap: 10%;
 }
 .profile-container-blog {
   width: 20vh;
