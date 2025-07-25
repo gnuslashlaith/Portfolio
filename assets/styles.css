@@ -279,32 +279,6 @@ p {
   margin-right: 2vh;
 }
 
-@media screen and (max-width: 599px) {
-  .main {
-    float: center;
-    width: 120vw;
-    margin-left: 5vh;
-    height: 100%;
-  }
-  .navigation {
-    display: flex;
-    margin-left: 5vh;
-    width: 71vh;
-  }
-  .profile-container {
-    height: 222px;
-    width: 150px;
-  }
-  .pfp {
-    height: 110px;
-  }
-  .about-container {
-    margin-left: 25vh;
-    margin-top: 30vh;
-  }
-
-}
-
 .header-con-blog {
   margin-left: 2vh;
   display: flex;
@@ -437,4 +411,31 @@ button:hover {
 
 .spinning {
 animation: spin 5s linear infinite;
+}
+
+
+@media screen and (max-width: 800px) {
+  .main {
+    width: 50vh;
+    height: 100%;
+  }
+
+  .profile-container {
+    height: 250px;
+    width: 100px;
+  }
+
+  .pfp {
+    height: 50px;
+    width: 50px;
+  }
+
+  .about-header, .about-text {
+    font-family: 10px;
+  }
+
+  .about-container {
+    margin-left: 25vh;
+  }
+
 }
