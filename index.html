@@ -20,9 +20,11 @@
                 img.src = 'assets/images/moon-not-angry.png'
             });
         </script>
+
+
         <div class="intro">
 
-            <h1 class="title vt323-regular">GNU / Laith</h1>
+            <h1 class="title vt323-regular" id="changeTitle">GNU / Laith</h1>
             <h4 class="sub vt323-regular">Aspiring electrical engineer.</h4>
 
         </div>
@@ -32,7 +34,6 @@
             <a class="tabs vt323-regular" href="blogs.html">Blogs</a>
             <a class="tabs vt323-regular" href="Music/music.html">Music</a>
             <a class="tabs vt323-regular" href="contact.html">Contacts</a>
-            <a class="tabs vt323-regular" href="assets/yasmeenresume.pdf">Resume</a>
         </div>
 
 
@@ -42,6 +43,7 @@
             <div class="nyan">
                 <img class="cat" src="assets/images/nyan-rainbow.gif">
                 <img class="just-cat" src="assets/images/just-cat.gif">
+                <button id="changeButton">meow</button>
 
             </div>
             <div class="main">
@@ -50,13 +52,13 @@
                     <div class="profile-container">
                         <img class="pfp" src="assets/images/avatar.png">
                         <h2 class="vt323-regular">ME!!</h2>
-                        <p class="vt323-regular">Name, Age: LAITH!, 15 </p>
-                        <p class="vt323-regular">Pronouns: He/they, but use anything lowk</p>
+                        <p class="vt323-regular" id="changeName">Name, Age: LAITH!, 15 </p>
+                        <p class="vt323-regular" id="changePronouns">Pronouns: He/they, but use anything lowk</p>
                     </div>
     
                     <div class="about-container">
                         <h1 class="about-header vt323-regular">About Me!</h1>
-                        <p class=" about-text vt323-regular">HELLOHELLO welcome to my website I hope you like. I'm Laith and I love to build things. 
+                        <p class=" about-text vt323-regular" id="changeAbout">HELLOHELLO welcome to my website I hope you like. I'm Laith and I love to build things. 
                             I've been makin stuff with programming since the 5th grade and have been grinding ever since. 
                             I've only recently started web development (if you couldn't tell, ha ha ha..), 
                             but I've done C++, Java, and Robotics Development for quite some time now! 
@@ -101,7 +103,7 @@
                         </div>
                         <br>
                         <div class="project-card">
-                            <a class="title-link vt323-regular" href="https://github.com/gnuslashlaith/Mp3PlayerCode">Mp3 Player</a>
+                            <a class="title-link vt323-regular" href="https://github.com/gnuslashlaith/Mp3Player">Mp3 Player</a>
                             <p class="vt323-regular"> 128 GB of storage, powered by RP2040.</p>
                         </div>
                         
@@ -132,5 +134,8 @@
                 }
             });
         </script>
+
+        <script src="assets/script.js"></script>
+
     </body>
 </html>
