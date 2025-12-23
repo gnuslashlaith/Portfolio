@@ -439,3 +439,9 @@ animation: spin 5s linear infinite;
   }
 
 }
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
