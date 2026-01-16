@@ -37,11 +37,14 @@ body {
   cursor: pointer;
 }
 
+.container {
+  width: fit-content;
+  margin: 0 auto;
+}
 .navigation {
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 50%;
+  gap: 6px;
+  margin-bottom: -5px;
 }
 
 .tabs {
@@ -87,6 +90,15 @@ p {
   left: 0;
 }
 
+.cat-secondary {
+  position: absolute;
+  height: 100px;
+  width: 100vw;
+  top: 50%;
+  transform: translateY(400%);
+  left: 0;
+}
+
 .just-cat {
   position: absolute;
   height: 100px;
@@ -124,7 +136,8 @@ p {
 .main-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  gap: 8px;
+  width: 100%;
 }
 
 .left-section {
@@ -134,7 +147,9 @@ p {
 }
 
 .right-section {
-  max-width: fit-content;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 1px;
 
 }
 
@@ -181,6 +196,7 @@ p {
 .about-header {
   color: blue;
   font-weight: bold;
+  margin-top: 0;
   
 }
 
@@ -225,12 +241,13 @@ p {
 }
 
 .project-card {
-  width: 100%;
+  width: 90%;
   border: 4px solid #000;
   padding: 2px;
   box-shadow: 5px 5px 0 #000, 10px 10px 0 blue;
   text-wrap: wrap;
   transition: all ease 2s;
+  box-sizing: border-box;
 }
 
 .title-link {
@@ -250,7 +267,7 @@ p {
 }
 
 .blog-cards-container {
-  margin-left: 2vh;
+
 
 }
 .blog-cards {
@@ -260,28 +277,31 @@ p {
   box-shadow: 5px 5px 0 #000, 10px 10px 0 blue;
   text-wrap: wrap;
   transition: all ease 2s;
+  box-sizing: border-box;
 }
 .top-half {
   display: flex;
   flex-direction: row;
-  gap: 10%;
+  gap: 25px;
 }
 .profile-container-blog {
-  width: 20vh;
+  width: 230px;
   border: 4px solid #000;
   padding: 20px;
   box-shadow: 5px 5px 0 #000, 10px 10px 0 blue;
   text-wrap: wrap;
   transition: all ease 2s;
+  box-sizing: border-box;
 }
 
 .blog-cards-two {
-  width: 30vh;
+  width: 90%;
   border: 4px solid #000;
   padding: 2px;
   box-shadow: 5px 5px 0 #000, 10px 10px 0 blue;
   text-wrap: wrap;
   transition: all ease 2s;
+  box-sizing: border-box;
 }
 
 .blog-cards:hover {
@@ -289,7 +309,6 @@ p {
 }
 
 .header-con {
-  margin-left: 2vh;
 }
 
 .blog-text {
@@ -301,7 +320,6 @@ p {
 }
 
 .header-con-blog {
-  margin-left: 2vh;
   display: flex;
   flex-direction: row;
   gap: 5%;
@@ -441,22 +459,4 @@ animation: spin 5s linear infinite;
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-@media screen and (max-width: 950px) {
-  .main {
-    width: min(600px, 60vw);
-    grid-template-columns: 1fr 1fr;
-  }
-  
-}
-
-@media screen and (max-width: 590px) {
-  .main {
-    width: min(800px, 80vw);
-  }
-
-  .main-wrapper {
-    grid-template-columns: 1fr;
-  }
 }
