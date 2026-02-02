@@ -456,7 +456,7 @@ animation: spin 5s linear infinite;
 
 
 .buttons {
-  display: flex;
-  flex-direction: row;
+  display: grid;
   justify-content: center;
+  grid-template-columns:repeat(4, 0.01fr);
 }
